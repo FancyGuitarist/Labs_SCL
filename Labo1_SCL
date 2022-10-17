@@ -9,5 +9,5 @@ for files in glob.glob("/Users/simonferland/Desktop/Bacc_GPH/Session_3/SCL/Labo1
         header = next(csvreader)
         for row in csvreader:
             rows.append(row)
-            print(rows)
+            
     
