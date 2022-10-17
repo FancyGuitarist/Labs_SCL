@@ -1,0 +1,13 @@
+import csv
+import glob
+from tkinter import Y
+#print(glob.glob("/Users/simonferland/Desktop/Bacc_GPH/Session_3/SCL/Labo1_CSV/*.csv"))
+for files in glob.glob("/Users/simonferland/Desktop/Bacc_GPH/Session_3/SCL/Labo1_CSV/*.csv"):
+    rows = []
+    with open(files, 'r') as file:
+        csvreader = csv.reader(file)
+        header = next(csvreader)
+        for row in csvreader:
+            rows.append(row)
+            print(rows)
+    
